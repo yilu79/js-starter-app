@@ -1,0 +1,27 @@
+extends layout
+
+block content
+  .container
+    .row
+      h1.center BBQ
+      p.center Hello World
+
+      .row
+        .col.s12.m6
+          .splash-container
+            img.materialboxed(data-caption='Welcome to Living with Value' width='500', src='img/splash.jpg')
+
+        .col.s12.m6
+          .carousel
+            a.carousel-item(href='#one!')
+              img(src='/img/mindfulness.jpg')
+            a.carousel-item(href='#two!')
+              img(src='/img/fashion_1.jpg')
+            a.carousel-item(href='#three!')
+              img(src='/img/cooking.jpg')
+            a.carousel-item(href='#four!')
+              img(src='/img/bbq.jpg')
+            a.carousel-item(href='#five!')
+              img(src='/img/groceries.jpg')
+            a.carousel-item(href='#six!')
+              img(src='/img/home.jpg')

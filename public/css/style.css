@@ -1,0 +1,38 @@
+.card-photo {
+  height: 300px;
+  width: auto;
+}
+.highlight {
+  color: #bbb;
+}
+.materialboxed {
+  border-radius: 50%;
+}
+.social-icons {
+  margin-left: 10px;
+}
+.social-text {
+  margin-left: 10px;
+}
+.card {
+  border-radius: 8px;
+}
+footer {
+  font-weight: bold;
+}
+li.divider {
+  color: #fff;
+}
+.splash-section {
+  margin-top: 30px;
+}
+.main-header {
+  font-style: italic;
+}
+.splash-text {
+  margin-top: 60px;
+  color: #ef9a9a;
+}
+.brand-logo {
+  font-style: italic;
+}
