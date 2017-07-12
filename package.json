@@ -1,17 +1,29 @@
 {
   "name": "vanillaJSstarter",
   "version": "0.0.1",
+  "description": "A Node + Jade + Materialize starter app, example app + tutorial",
+  "homepage": "js-starter-app",
+  "author": {
+    "name": "Tiffine Koch",
+    "email": "tiffine.koch@gmail.com",
+    "url": ""
+  },
+  "engines": {
+    "node": "6.11.0",
+    "npm": "3.10.10"
+  },
+  "scripts": {
+    "start": "node ./bin/www",
+    "postinstall": "bower i"
+  },
   "dependencies": {
     "express": "*",
     "jade": "*",
     "stylus": "*",
-	"serve-favicon": "*",
-	"morgan": "*",
-	"body-parser": "*",
-	"method-override": "*"
-  },
-  "engines": {
-    "node": "*",
-    "npm": "*"
+  	"serve-favicon": "*",
+  	"morgan": "*",
+  	"body-parser": "*",
+  	"method-override": "*",
+    "bower": "*"
   }
 }
