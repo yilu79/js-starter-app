@@ -13,8 +13,7 @@
     "npm": "3.10.10"
   },
   "scripts": {
-    "start": "node ./bin/www",
-    "postinstall": "bower i"
+    "start": "node ./bin/www"
   },
   "dependencies": {
     "express": "*",
