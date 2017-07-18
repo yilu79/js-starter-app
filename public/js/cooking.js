@@ -4,10 +4,10 @@
 $(document).ready(init);
 
 function init() {
-  // loadSports();
+  loadCooking();
 }
 
-function loadSports(e) {
+function loadCooking(e) {
 
   $.ajax({
     url:'http://api.walmartlabs.com/v1/items/12417832?apiKey=rzmhzjsyz8w3vgrtaqyp2yf5&&format=json',

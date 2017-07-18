@@ -16,13 +16,14 @@
     "start": "node ./bin/www"
   },
   "dependencies": {
+    "body-parser": "*",
+    "bower": "*",
     "express": "*",
     "jade": "*",
-    "stylus": "*",
-  	"serve-favicon": "*",
-  	"morgan": "*",
-  	"body-parser": "*",
-  	"method-override": "*",
-    "bower": "*"
+    "method-override": "*",
+    "morgan": "*",
+    "request": "*",
+    "serve-favicon": "*",
+    "stylus": "*"
   }
 }
