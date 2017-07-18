@@ -10,7 +10,7 @@ function init() {
 function loadGroceries(e) {
 
   $.ajax({
-    url:'http://api.walmartlabs.com/v1/items/25524661?format=json&apiKey=2utyc5xj5c9tqkmasefs9ebm',
+    url:'https://api.walmartlabs.com/v1/items/25524661?format=json&apiKey=2utyc5xj5c9tqkmasefs9ebm',
     type: "GET",
     success: function(data) {
       console.log("data: ", data);

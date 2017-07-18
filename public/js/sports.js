@@ -10,7 +10,7 @@ function init() {
 function loadSports(e) {
 
   $.ajax({
-    url:'http://api.walmartlabs.com/v1/items/12417832?apiKey=rzmhzjsyz8w3vgrtaqyp2yf5&&format=json',
+    url:'https://api.walmartlabs.com/v1/items/12417832?apiKey=rzmhzjsyz8w3vgrtaqyp2yf5&&format=json',
     type: "GET",
     success: function(data) {
       var $name = $('<p>').text(data.brandName);
