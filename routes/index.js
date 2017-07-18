@@ -30,10 +30,6 @@ router.get('/home', function(req, res, next) {
   res.render('home');
 });
 
-router.get('/bbq', function(req, res, next) {
-  res.render('bbq');
-});
-
 router.get('/cooking', function(req, res, next) {
   res.render('cooking');
 });

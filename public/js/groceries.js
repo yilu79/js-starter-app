@@ -4,19 +4,20 @@
 $(document).ready(init);
 
 function init() {
-  loadSports();
+  loadGroceries();
 }
 
-function loadSports(e) {
+function loadGroceries(e) {
 
   $.ajax({
-    url:'http://api.walmartlabs.com/v1/items/12417832?apiKey=rzmhzjsyz8w3vgrtaqyp2yf5&&format=json',
+    url:'http://api.walmartlabs.com/v1/items/25524661?format=json&apiKey=2utyc5xj5c9tqkmasefs9ebm',
     type: "GET",
     success: function(data) {
+      console.log("data: ", data);
       var $name = $('<p>').text(data.brandName);
       var $description = $('<p>').text(data.longDescription);
       var $image = $('<img>').attr('src', data.thumbnailImage);
-      var $rating = $('<p>').text(data.customerRating);
+      var $rating = $('<p>').text(data.name);
       var $ratingImage = $('<img>').attr('src', data.customerRatingImage);
       $('.title').append($name);
       $('.content').append($description);
