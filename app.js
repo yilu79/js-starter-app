@@ -29,18 +29,10 @@ if (app.get('env') == 'development') {
 	app.locals.pretty = true;
 }
 
-app.get('/', routes.index);
-app.get('/sports', function(req, res) {
-    request("http://api.walmartlabs.com/v1/items/12417832?apiKey=rzmhzjsyz8w3vgrtaqyp2yf5&&format=json", function(error, response, body) {
-        var bodyJson = JSON.parse(body);
-        console.log(bodyJson);
-        var title = bodyJson.name;
-        var description = bodyJson.longDescription;
-        var imgSrc = bodyJson.mediumImage;
-        res.send('<html><head><title>Sports! Summer Splash!</title></head><body><h1>' + title + '</h1><img src=' + imgSrc + '/> <p>' + description +' <\p></body></html>');
-    });
-});
+app.use('/', require('./routes/index'));
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'));
 });
+
+module.exports = app;
