@@ -1,14 +1,33 @@
-extends layout
+/extends layout
 
 block content
-  h1 Sports
+  h1.category-header Sports
+
+  .col.s12.m12
+    .carousel
+      a.carousel-item(href='/mindfulness')
+        img(src='/img/mindfulness.jpg')
+      a.carousel-item(href='/fashionista')
+        img(src='/img/fashion_1.jpg')
+      a.carousel-item(href='/cooking')
+        img(src='/img/cooking.jpg')
+      a.carousel-item(href='/bbq')
+        img(src='/img/bbq.jpg')
+      a.carousel-item(href='/groceries')
+        img(src='/img/groceries.jpg')
+      a.carousel-item(href='/home')
+        img(src='/img/home.jpg')
+      a.carousel-item.sports(href='/sports')
+        img(src='/img/sports.jpg')
+
   ul.collection#list
     li.collection-item.avatar#template
-      img.circle(src='img/sports.jpg', alt='')
-      span.title.itemTitle Title
-      p.description
-        | First Line
-        br
-        |          Second Line
+      .image.circle
+      span.title
+      span.rating.pink
+      .ratingImage
+      br
+      span.content
+
       a.secondary-content(href='#!')
         i.material-icons grade
